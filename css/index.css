@@ -1,0 +1,160 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.btn-annee {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.50rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    background-color: #c0c0c0;
+    border-color: #c0c0c0;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.btn-annee:hover {
+    color: #fff;
+    background-color: rgb(46, 45, 44);
+    border-color: rgb(29, 29, 28);
+}
+
+.btn-annee.disabled {
+    color: #fff;
+    background-color: #c0c0c0;
+    border-color: #c0c0c0;
+}
+
+.btn-annee:focus {
+    color: #fff;
+    background-color: rgb(46, 45, 44);
+    border-color: rgb(29, 29, 28);
+    box-shadow: 0 0 0 0.2rem rgb(29, 29, 28, 0.5);
+    outline: none;
+}
+
+.btn-semaine {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    background-color: #CC6600;
+    border-color: #CC6600;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.btn-semaine:hover {
+    color: #fff;
+    background-color: rgb(182, 92, 3);
+    border-color: rgb(163, 82, 0);
+}
+
+.btn-semaine.disabled {
+    color: #fff;
+    background-color: #CC6600;
+    border-color: #CC6600;
+}
+
+.btn-semaine:focus {
+    color: #fff;
+    background-color: rgb(182, 92, 3);
+    border-color: rgb(163, 82, 0);
+    box-shadow: 0 0 0 0.2rem rgb(163, 82, 0, 0.5);
+    outline: none;
+}
+
+.btn-seance {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    display: inline-block;
+    font-weight: 250;
+    color: #000000;
+    background-color: none;
+    border-color: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.card-body {
+    margin-top: 0.3rem;
+}
+
+.tab-mois a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tab-mois a:hover {
+    color: #CC6600;
+}
+
+.tab-mois a:focus {
+    color: #CC6600;
+}
+
+.btn-prominfo {
+    color: #fff;
+    background-color: #CC6600;
+    border-color: #CC6600;
+    display: block;
+    transition: none;
+    text-decoration: none;
+    border: 1px solid white;
+    outline: none;
+    width: 100%;
+}
+
+.btn-prominfo:hover {
+    color: #fff;
+    background-color: rgb(182, 92, 3);
+    border-color: rgb(163, 82, 0);
+}
+
+.btn-prominfo:focus {
+    color: #fff;
+    background-color: rgb(182, 92, 3);
+    border-color: rgb(163, 82, 0);
+    outline: none;
+}
+
+.btn-prominfo:disabled {
+    color: #fff;
+    background-color: #CC6600;
+    border-color: #CC6600;
+}
+
+.tab-mois td {
+    width: 10%;
+}
+
+.btn-prominfo-fullsize {
+    width: 100%;
+    height: 100%;
+}
+
+.prominfo-active {
+    background-color: #c0c0c0;
+}

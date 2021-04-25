@@ -1,0 +1,41 @@
+
+<?php
+include "fctAux.inc.php";
+require ("DB.inc.php");
+
+	enTete();
+	contenu();
+	pied();
+	function contenu(){
+	  $db = DB::getInstance();
+	  if ($db == null) {
+	   echo "Impossible de se connecter &agrave; la base de donn&eacute;es !";
+	  }
+	  else {
+		try {
+			$t = $db->getClients();
+			genererTableauTuple($t);
+		} //fin try
+		catch (Exception $e) {
+		      echo $e->getMessage();
+		}
+		$db->close();
+	  } //fin du else connexion reussie
+	}
+
+  function genererTableauTuple($tab_tuple){
+	  echo "<table>";
+	  echo "<tr><td>IdCli</td><td>Nom</td><td>Adresse</td>";
+	 for ($i=0; $i <count($tab_tuple) ; $i++) {
+		 echo "<tr>";
+	 	echo "<td>".$tab_tuple[$i]->getIdcli()."</td>\n";
+		echo "<td>".$tab_tuple[$i]->getNom()."</td>\n";
+		echo "<td>".$tab_tuple[$i]->getAdresse()."</td>\n";
+		echo "</tr>";
+	 }
+	 echo "</table>";
+  }
+
+?>
+
+</body></html>
